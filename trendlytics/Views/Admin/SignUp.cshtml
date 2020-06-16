@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/adminloginlayout.cshtml";
+}
+
+
+<seciton class="login">
+    <div class="wrapper wrapper-login">
+        <div class="container container-login animated fadeIn">
+            <h3 class="text-center">Admin Sign Up</h3>
+            <form class="login-form" id="SignUpfrm">
+                <div class="form-group form-floating-label">
+                    <input id="username" name="USERNAME" type="text" class="form-control input-border-bottom" required>
+                    <label for="username" class="placeholder">Username</label>
+                </div>
+                <div class="form-group form-floating-label">
+                    <input id="password" name="PASSWORD" type="password" class="form-control input-border-bottom" required>
+                    <label for="password" class="placeholder">Password</label>
+                    <div class="show-password">
+                        <i class="flaticon-interface"></i>
+                    </div>
+                </div>
+                <div class="form-group form-floating-label">
+                    <input id="email" name="EMAIL" type="text" class="form-control input-border-bottom" required>
+                    <label for="email" class="placeholder">Email</label>
+                </div>
+                <div class="form-group form-floating-label">
+                    <input id="Phone" name="PHONE" type="text" class="form-control input-border-bottom" required>
+                    <label for="Phone" class="placeholder">Phone number</label>
+                    
+                </div>
+
+                <div class="form-action mb-3">
+                    <a href="#" class="btn btn-primary btn-rounded btn-login" onclick="SignUp()">Sign Up</a>
+                </div>
+                <a href="@Url.Action("login")">Already Have an account?</a>
+            </form>
+        </div>
+
+
+    </div>
+
+
+</seciton>
+
+@section scripts{
+    <script type="text/javascript">
+    $(document).keypress(function (e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            if ($("#username").val()) {
+                if ($("#password").val()) {
+                    LogIn();
+                }
+                else {
+                    $("#password").focus();
+                }
+            }
+            else {
+                $("#username").focus();
+            }
+        }
+    })
+
+    $("input").keypress(function (e) {
+        $("#ErrMsg").text('');
+        $("#ErrMsgDiv").hide();
+    })
+
+    function SignUp() {
+
+        if ($('#SignUpfrm')[0].checkValidity()) {
+
+           Swal.fire('Please wait');
+           Swal.showLoading();
+
+            var frmSerialize = $("#SignUpfrm").serialize();
+            console.log("frm : ",frmSerialize);
+            $.post("/admin/SignUp", frmSerialize, function (data) {
+
+
+                   Swal.close();
+                if (data == "success") {
+                     Swal.fire(
+                            'Good job!',
+                            'Account created successfully!',
+                            'success'
+                        ).then(function () {
+
+                            location.href = "/Home/Login";
+
+                        });
+                        
+                    
+                  
+                }
+                    else if (data == "An account already exists with the given Email") {
+                         Swal.fire({
+                          icon: 'error',
+                          title: 'Oops...',
+                          text: 'Account already exists. Please login!'
+                        
+                        })
+                    }
+                        else if (data == "Username already exists") {
+                         Swal.fire({
+                          icon: 'error',
+                          title: 'Oops...',
+                          text: 'Username not available'
+                        
+                        })
+                    }
+                    else {
+                       Swal.fire({
+                          icon: 'error',
+                          title: 'Oops...',
+                          text: 'There seems to be some error!',
+                        
+                        })
+                    }
+
+            })
+        }
+        else {
+            $('#frmLogin').find(':submit').click();
+        }
+    }
+    </script>
+    <script src="~/Content/Template/assets/js/jquery-2.2.4.min.js"></script>
+    <script src="~/Content/Template/assets/js/plugins.js"></script>
+    <script src="~/Content/Template/assets/js/functions.js"></script>
+}
+
+

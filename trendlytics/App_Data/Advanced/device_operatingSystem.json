@@ -1,0 +1,23 @@
+{
+  "count": {
+    "Windows": 350072,
+    "Macintosh": 253938,
+    "Android": 123892,
+    "iOS": 107665,
+    "Linux": 35034
+  },
+  "count of non-zero revenue": {
+    "Windows1": 2309,
+    "Macintosh1": 6426,
+    "Android1": 467,
+    "iOS1": 536,
+    "Linux1": 782
+  },
+  "mean": {
+    "Windows2": 172071338.2416630685,
+    "Macintosh2": 133267318.7052598745,
+    "Android2": 77818586.7237687409,
+    "iOS2": 41356156.7164179087,
+    "Linux2": 56151406.6496163681
+  }
+}

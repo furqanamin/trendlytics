@@ -1,0 +1,17 @@
+{
+  "count": {
+    "desktop": 664479,
+    "mobile": 208725,
+    "tablet": 30449
+  },
+  "count of non-zero revenue": {
+    "desktop1": 10495,
+    "mobile1": 852,
+    "tablet1": 168
+  },
+  "mean": {
+    "desktop2": 141101866.6031443477,
+    "mobile2": 58434049.2957746461,
+    "tablet2": 56079404.7619047612
+  }
+}

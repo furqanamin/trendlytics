@@ -1,0 +1,283 @@
+﻿
+
+
+
+@{
+    ViewBag.Title = "Awareness";
+    Layout = "~/Views/Shared/Adminlayout.cshtml";
+
+    List<string> countrynames = ViewBag.countrynames;
+    List<string> visits = ViewBag.visits;
+    List<string> percents = ViewBag.percents;
+}
+
+
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="card card-stats card-primary card-round">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-like"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Likes</p>
+                            <h4 class="card-title">@ViewBag.likes</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="card card-stats card-info card-round">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-graph-2"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Hits</p>
+                            <h4 class="card-title">@ViewBag.hits</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="card card-stats card-success card-round">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-graph"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Reach</p>
+                            <h4 class="card-title">@ViewBag.reach</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Page Likes</div>
+                    <div class="card-tools">
+                        <a href="#" class="btn btn-info btn-border btn-round btn-sm mr-2">
+                            <span class="btn-label">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                            Export
+                        </a>
+                        <a href="#" class="btn btn-info btn-border btn-round btn-sm">
+                            <span class="btn-label">
+                                <i class="fa fa-print"></i>
+                            </span>
+                            Print
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <div id="likeschart"></div>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row row-card-no-pd">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <h4 class="card-title">Users Geolocation</h4>
+                    <div class="card-tools">
+                        <button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-angle-down"></span></button>
+                        <button class="btn btn-icon btn-link btn-primary btn-xs btn-refresh-card"><span class="fa fa-sync-alt"></span></button>
+                        <button class="btn btn-icon btn-link btn-primary btn-xs"><span class="fa fa-times"></span></button>
+                    </div>
+                </div>
+                <p class="card-category">
+                    Map of the distribution of users around the world
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="table-responsive table-hover table-sales">
+                            <table class="table">
+                                <tbody>
+                                    @for (var i = 0; i < 10; i++)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <div class="flag">
+                                                    <img src=@Url.Content("~/Content/DashBoard/assets/flags/"+@i+".png") alt="@countrynames[i]">
+                                                </div>
+                                            </td>
+                                            <td>@countrynames[i]</td>
+                                            <td class="text-right">
+                                                @visits[i]
+                                            </td>
+                                            <td class="text-right">
+                                                @percents[i]%
+                                            </td>
+                                        </tr>
+
+
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mapcontainer">
+                            <div id="map-example" class="vmap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Page Reach Comparison</div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <div id="lines"></div>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+
+    $(document).ready(function () {
+        var keys = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var values = [];
+
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/likes",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < Object.keys(data).length; i++) {
+                    // keys[i - 1] = Object.keys(data)[i]
+                    values[i] = data[Object.keys(data)[i]];
+                }
+              var  data = [{
+                    type: 'scatter',
+                    x: keys,
+                    y: values,
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(142,124,195)'
+                    }
+                }];
+
+                 Plotly.newPlot('likeschart', data);
+            }
+        });
+
+
+
+    })
+
+    $(document).ready(function () {
+        var keys = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var values = [];
+          $.ajax({
+            dataType: "json",
+            url: "/Admin/searchs",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < Object.keys(data).length; i++) {
+                    // keys[i - 1] = Object.keys(data)[i]
+                    values[i] = data[Object.keys(data)[i]];
+                }
+                var trace1={
+                    type: 'scatter',
+                    x: keys,
+                    y: values[0],
+                    name:'Organic Search',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(0,204,0)'
+                    }
+                }
+                    var trace2={
+                    type: 'scatter',
+                    x: keys,
+                        y: values[1],
+                    name:'Paid Search',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(55, 128, 191)'
+                    }
+                }
+                    var trace3={
+                    type: 'scatter',
+                    x: keys,
+                        y: values[2],
+                    name:'Referral',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(142,124,195)'
+                    }
+                }
+                    var trace4={
+                    type: 'scatter',
+                    x: keys,
+                    y: values[3],
+                    name:'Social',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(219, 64, 82)'
+                    }
+                }
+              var  data = [trace1, trace2, trace3, trace4];
+
+                 Plotly.newPlot('lines', data);
+            }
+        });
+
+
+
+    })
+
+
+
+</script>
+

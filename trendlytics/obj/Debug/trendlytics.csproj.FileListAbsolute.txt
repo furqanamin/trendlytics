@@ -1,0 +1,195 @@
+D:\Furqan\trendlytics\trendlytics\bin\trendlytics.dll.config
+D:\Furqan\trendlytics\trendlytics\bin\trendlytics.dll
+D:\Furqan\trendlytics\trendlytics\bin\trendlytics.pdb
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\csc.exe
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\csc.exe.config
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\csc.rsp
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\csi.exe
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\csi.exe.config
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\csi.rsp
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.AppContext.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Collections.Immutable.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Console.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.IO.Compression.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.IO.FileSystem.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.IO.Pipes.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Reflection.Metadata.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Security.AccessControl.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Security.Claims.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.ValueTuple.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Xml.XPath.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\vbc.exe
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\vbc.exe.config
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\vbc.rsp
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\VBCSCompiler.exe
+D:\Furqan\trendlytics\trendlytics\bin\roslyn\VBCSCompiler.exe.config
+D:\Furqan\trendlytics\trendlytics\bin\Antlr3.Runtime.dll
+D:\Furqan\trendlytics\trendlytics\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Furqan\trendlytics\trendlytics\bin\Microsoft.Web.Infrastructure.dll
+D:\Furqan\trendlytics\trendlytics\bin\Newtonsoft.Json.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Helpers.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Mvc.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Optimization.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Razor.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.WebPages.Deployment.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.WebPages.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.WebPages.Razor.dll
+D:\Furqan\trendlytics\trendlytics\bin\WebGrease.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Helpers.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Mvc.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Optimization.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.Razor.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.WebPages.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.WebPages.Deployment.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Web.WebPages.Razor.xml
+D:\Furqan\trendlytics\trendlytics\bin\Newtonsoft.Json.xml
+D:\Furqan\trendlytics\trendlytics\bin\Antlr3.Runtime.pdb
+D:\Furqan\trendlytics\trendlytics\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Furqan\trendlytics\trendlytics\obj\Debug\trendlytics.csprojAssemblyReference.cache
+D:\Furqan\trendlytics\trendlytics\obj\Debug\trendlytics.csproj.CopyComplete
+D:\Furqan\trendlytics\trendlytics\obj\Debug\trendlytics.dll
+D:\Furqan\trendlytics\trendlytics\obj\Debug\trendlytics.pdb
+D:\Furqan\trendlytics\trendlytics\bin\BouncyCastle.Crypto.dll
+D:\Furqan\trendlytics\trendlytics\bin\Google.Protobuf.dll
+D:\Furqan\trendlytics\trendlytics\bin\K4os.Compression.LZ4.dll
+D:\Furqan\trendlytics\trendlytics\bin\K4os.Compression.LZ4.Streams.dll
+D:\Furqan\trendlytics\trendlytics\bin\K4os.Hash.xxHash.dll
+D:\Furqan\trendlytics\trendlytics\bin\MySql.Data.dll
+D:\Furqan\trendlytics\trendlytics\bin\Renci.SshNet.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Buffers.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Memory.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Numerics.Vectors.dll
+D:\Furqan\trendlytics\trendlytics\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Furqan\trendlytics\trendlytics\bin\Ubiety.Dns.Core.dll
+D:\Furqan\trendlytics\trendlytics\bin\Zstandard.Net.dll
+D:\Furqan\trendlytics\trendlytics\bin\Google.Protobuf.xml
+D:\Furqan\trendlytics\trendlytics\bin\K4os.Compression.LZ4.xml
+D:\Furqan\trendlytics\trendlytics\bin\K4os.Compression.LZ4.Streams.xml
+D:\Furqan\trendlytics\trendlytics\bin\K4os.Hash.xxHash.xml
+D:\Furqan\trendlytics\trendlytics\bin\MySql.Data.xml
+D:\Furqan\trendlytics\trendlytics\bin\Renci.SshNet.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Buffers.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Memory.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Numerics.Vectors.xml
+D:\Furqan\trendlytics\trendlytics\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\trendlytics.dll.config
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\trendlytics.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\trendlytics.pdb
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\csc.exe
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\csc.exe.config
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\csc.rsp
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\csi.exe
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\csi.exe.config
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\csi.rsp
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.AppContext.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Console.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.IO.Compression.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Security.Claims.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.ValueTuple.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\vbc.exe
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\vbc.exe.config
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\vbc.rsp
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\VBCSCompiler.exe
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Antlr3.Runtime.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\BouncyCastle.Crypto.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Google.Protobuf.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\K4os.Compression.LZ4.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\K4os.Hash.xxHash.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\MySql.Data.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Newtonsoft.Json.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Renci.SshNet.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Buffers.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Memory.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Numerics.Vectors.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Helpers.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Mvc.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Optimization.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Razor.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.WebPages.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.WebPages.Razor.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Ubiety.Dns.Core.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\WebGrease.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Zstandard.Net.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Google.Protobuf.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\K4os.Compression.LZ4.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\K4os.Hash.xxHash.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\MySql.Data.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Renci.SshNet.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Buffers.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Memory.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Numerics.Vectors.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Helpers.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Mvc.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Optimization.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.Razor.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.WebPages.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\System.Web.WebPages.Razor.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Newtonsoft.Json.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Antlr3.Runtime.pdb
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\obj\Debug\trendlytics.csprojResolveAssemblyReference.cache
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\obj\Debug\trendlytics.dll
+C:\Users\Furqan Amin\Desktop\trendlytics\trendlytics\obj\Debug\trendlytics.pdb

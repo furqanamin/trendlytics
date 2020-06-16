@@ -1,0 +1,16 @@
+{
+
+
+  "Revenue_Channel":{
+    "Referral": 42.2986867802,
+    "Direct": 28.2350932026,
+    "Organic Search": 21.1925592481,
+    "Display": 5.0866127466,
+    "Paid Search": 2.8283691604,
+    "Social": 0.3192410761,
+    "Affiliates": 0.0387891147,
+    "(Other)": 0.0006486713
+  }
+
+
+}

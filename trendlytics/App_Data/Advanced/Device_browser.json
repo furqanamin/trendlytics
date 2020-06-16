@@ -1,0 +1,23 @@
+{
+  "count": {
+    "Chrome": 620364,
+    "Safari": 182245,
+    "Firefox": 37069,
+    "Internet Explorer": 19375,
+    "Edge": 10205
+  },
+  "count of non-zero revenue": {
+    "Chrome1": 10353,
+    "Safari1": 780,
+    "Firefox1": 191,
+    "Internet Explorer1": 109,
+    "Edge1": 58
+  },
+  "mean": {
+    "Chrome2": 133594606.3942818493,
+    "Safari2": 67176256.4102564156,
+    "Firefox2": 467624712.0418848395,
+    "Internet Explorer2": 75738990.825688079,
+    "Edge2": 111775344.8275862038
+  }
+}

@@ -1,0 +1,395 @@
+﻿
+@{
+    ViewBag.Title = "Engagement";
+    Layout = "~/Views/Shared/Adminlayout.cshtml";
+
+    List<object> comments = ViewBag.com;
+    List<object> reviews = ViewBag.reviews;
+}
+
+
+
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-primary card-round">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-analytics"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Posts</p>
+                            <h4 class="card-title">@ViewBag.posts</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-info card-round">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-like"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Post Likes</p>
+                            <h4 class="card-title">@ViewBag.likes</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-success card-round">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-analytics"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Total Interactions</p>
+                            <h4 class="card-title">@ViewBag.TotalInteractions</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-secondary card-round">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-star-1"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Comments</p>
+                            <h4 class="card-title">@ViewBag.comments</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Card With Icon States Color -->
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-chart-pie text-warning"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Total Impressions</p>
+                            <h4 class="card-title">@ViewBag.TotalImpressions</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-bars-2 text-success"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Total Engagements</p>
+                            <h4 class="card-title">@ViewBag.TotalEngagement</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-box-3 text-danger"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Loyal Impressions</p>
+                            <h4 class="card-title">@ViewBag.loyalImpressions</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="icon-big text-center">
+                            <i class="flaticon-chart-pie text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats">
+                        <div class="numbers">
+                            <p class="card-category">Lopyal Engagements</p>
+                            <h4 class="card-title">@ViewBag.loyalEngagements</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Reach and Engagement</div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <div id="Reach"></div>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Users by Day</div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <div id="UserByDay"></div>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Comments</div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive table-hover table-sales">
+                            <table class="table">
+                                <tbody>
+                                    @for (var i = 0; i < comments.Count; i++)
+                                    {
+                                    <tr>
+
+                                        @if (reviews[i].ToString() == "pos")
+                                        {
+                                            <td style="color:forestgreen">@comments[i]</td>
+                                        }
+                                        else
+                                        {
+                                            <td style="color:red">@comments[i]</td>
+                                        }
+
+                                        <td class="text-right">
+                                            @reviews[i]
+                                        </td>
+
+                                    </tr>
+
+
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Sentiments Summary</div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <div id="sentiments"></div>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+
+    $(document).ready(function () {
+        var keys = [];
+        var values = [];
+
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/Sentiment",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < Object.keys(data).length; i++) {
+                    keys[i] = Object.keys(data)[i]
+                    values[i] = data[Object.keys(data)[i]];
+                }
+                var data = [{
+                    type: 'pie',
+                    hole:0.4,
+                    labels: keys,
+                    values: values,
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(142,124,195)'
+                    }
+                }];
+
+                Plotly.newPlot('sentiments', data);
+            }
+        });
+
+
+
+    })
+
+    $(document).ready(function () {
+        var keys = [];
+        var values = [];
+
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/UserByDay",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < Object.keys(data).length; i++) {
+                    keys[i] = Object.keys(data)[i]
+                    values[i] = data[Object.keys(data)[i]];
+                }
+                var data = [{
+                    type: 'scatter',
+                    x: keys,
+                    y: values,
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(142,124,195)'
+                    }
+                }];
+
+                Plotly.newPlot('UserByDay', data);
+            }
+        });
+
+
+
+    })
+
+    $(document).ready(function () {
+        var keys = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var values = [];
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/Impressions",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < Object.keys(data).length; i++) {
+                    // keys[i - 1] = Object.keys(data)[i]
+                    values[i] = data[Object.keys(data)[i]];
+                }
+                var trace1 = {
+                    type: 'scatter',
+                    x: keys,
+                    y: values[0],
+                    name: 'Reach',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(0,204,0)'
+                    }
+                }
+                var trace2 = {
+                    type: 'scatter',
+                    x: keys,
+                    y: values[1],
+                    xaxis: 'x2',
+                    yaxis: 'y2',
+                    name: 'Engagements',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(55, 128, 191)'
+                    }
+                }
+
+
+                var data = [trace1, trace2];
+                var layout = {
+                    grid: { rows: 1, columns: 2, pattern: 'independent' },
+                };
+
+
+                Plotly.newPlot('Reach', data, layout);
+            }
+        });
+
+
+
+    })
+
+
+
+</script>
+

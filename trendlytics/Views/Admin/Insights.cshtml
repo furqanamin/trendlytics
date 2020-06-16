@@ -1,0 +1,486 @@
+﻿
+@{
+    ViewBag.Title = "Insights";
+    Layout = "~/Views/Shared/Adminlayout.cshtml";
+}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-head-row">
+                        <div class="card-title">Views by Channel</div>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container" style="min-height: 375px">
+                        <div id="CountsChannel"></div>
+                    </div>
+                    <div id="myChartLegend"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-head-row">
+                        <div class="card-title">Revenue by Channel</div>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container" style="min-height: 375px">
+                        <div id="RevenueChannel"></div>
+                    </div>
+                    <div id="myChartLegend"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Users by Browser</div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <div id="browser"></div>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-head-row">
+                    <div class="card-title">Users by Operating System</div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="min-height: 375px">
+                    <div id="os"></div>
+                </div>
+                <div id="myChartLegend"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+     $(document).ready(function () {
+        var keys = [];
+        var count = [];
+       
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/CountChannel",
+            //data: data,
+            success: function (data) {
+                console.log('pie');
+                console.log(Object.keys(data).length);
+                for (var i = 0; i <Object.keys(data).length; i++) {
+                    keys[i] = Object.keys(data)[i]
+                    count[i] = data[Object.keys(data)[i]];
+                }
+                
+
+                var trace1 = {
+                    type: 'pie',
+                   hole:0.4,
+                    values: count,
+                    labels: keys,
+                    orientation: 'h',
+                    name: 'Counts',
+                    marker: {
+                        color: 'rgb(0,124,255)'
+                    }
+                }
+                //var trace2 = {
+                //    type: 'bar',
+                //    x: revenue,
+                //    y: keys,
+                //    xaxis: 'x2',
+                //    yaxis: 'y2',
+                //    name: 'Revenue Generators',
+                //    orientation: 'h',
+                //    marker: {
+                //        color: 'rgb(142,124,195)'
+                //    }
+                //}
+                //var trace3 = {
+                //    type: 'bar',
+                //    x: mean,
+                //    y: keys,
+                //    xaxis: 'x3',
+                //    yaxis: 'y3',
+                //    name: 'Mean',
+                //    orientation: 'h',
+                //    marker: {
+                //        color: 'rgb(0,254,0)'
+                //    }
+                //}
+                //var layout = {
+                //    grid: { rows: 1, columns: 3, pattern: 'independent' },
+                //};
+
+                var data = [trace1];
+
+
+                Plotly.newPlot('CountsChannel', data);
+            }
+        });
+
+
+
+     })
+
+      $(document).ready(function () {
+        var keys = [];
+        var count = [];
+       var ultimateColors = [
+  ['rgb(56, 75, 126)', 'rgb(18, 36, 37)', 'rgb(34, 53, 101)', 'rgb(36, 55, 57)', 'rgb(6, 4, 4)'],
+  ['rgb(177, 127, 38)', 'rgb(205, 152, 36)', 'rgb(99, 79, 37)', 'rgb(129, 180, 179)', 'rgb(124, 103, 37)'],
+  ['rgb(33, 75, 99)', 'rgb(79, 129, 102)', 'rgb(151, 179, 100)', 'rgb(175, 49, 35)', 'rgb(36, 73, 147)'],
+  ['rgb(146, 123, 21)', 'rgb(177, 180, 34)', 'rgb(206, 206, 40)', 'rgb(175, 51, 21)', 'rgb(35, 36, 21)']
+];
+
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/RevenueChannel",
+            //data: data,
+            success: function (data) {
+                console.log('pie');
+                console.log(Object.keys(data).length);
+                for (var i = 0; i <Object.keys(data).length; i++) {
+                    keys[i] = Object.keys(data)[i]
+                    count[i] = data[Object.keys(data)[i]];
+                }
+                
+
+                var trace1 = {
+                    type: 'pie',
+                   hole:0.4,
+                    values: count,
+                    labels: keys,
+                    orientation: 'h',
+                    name: 'Counts',
+                    marker: {
+                        color: ultimateColors[2]
+                    }
+                }
+               
+                var data = [trace1];
+
+
+                Plotly.newPlot('RevenueChannel', data);
+            }
+        });
+
+
+
+    })
+    $(document).ready(function () {
+        var keys = [];
+        var count = [];
+        var revenue = [];
+        var mean = [];
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/DeviceBrowser",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < 5; i++) {
+                    keys[i] = Object.keys(data)[i]
+                    count[i] = data[Object.keys(data)[i]];
+                }
+                for (var i = 5; i < 10; i++) {
+
+
+                    revenue[i - 5] = data[Object.keys(data)[i]];
+                }
+                for (var i = 10; i < 15; i++) {
+
+
+                    mean[i - 10] = data[Object.keys(data)[i]];
+                }
+
+
+                var trace1 = {
+                    type: 'bar',
+                    x: count,
+                    y: keys,
+                    orientation: 'h',
+                    name: 'Counts',
+                    marker: {
+                        color: 'rgb(0,124,255)'
+                    }
+                }
+                var trace2 = {
+                    type: 'bar',
+                    x: revenue,
+                    y: keys,
+                    xaxis: 'x2',
+                    yaxis: 'y2',
+                    name: 'Revenue Generators',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(142,124,195)'
+                    }
+                }
+                var trace3 = {
+                    type: 'bar',
+                    x: mean,
+                    y: keys,
+                    xaxis: 'x3',
+                    yaxis: 'y3',
+                    name: 'Mean',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(0,254,0)'
+                    }
+                }
+                var layout = {
+                    grid: { rows: 1, columns: 3, pattern: 'independent' },
+                };
+
+                var data = [trace1, trace2, trace3];
+
+
+                Plotly.newPlot('browser', data, layout);
+            }
+        });
+
+
+
+    })
+    $(document).ready(function () {
+        var oskeys = [];
+        var oscount = [];
+        var osrevenue = [];
+        var osmean = [];
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/DeviceOS",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < 5; i++) {
+                    oskeys[i] = Object.keys(data)[i]
+                    oscount[i] = data[Object.keys(data)[i]];
+                }
+                for (var i = 5; i < 10; i++) {
+
+
+                    osrevenue[i - 5] = data[Object.keys(data)[i]];
+                }
+                for (var i = 10; i < 15; i++) {
+
+
+                    osmean[i - 10] = data[Object.keys(data)[i]];
+                }
+
+
+                var trace1 = {
+                    type: 'bar',
+                    x: oscount,
+                    y: oskeys,
+                    orientation: 'h',
+                    name: 'Counts',
+                    marker: {
+                        color: 'rgb(0,124,255)'
+                    }
+                }
+                var trace2 = {
+                    type: 'bar',
+                    x: osrevenue,
+                    y: oskeys,
+                    xaxis: 'x2',
+                    yaxis: 'y2',
+                    name: 'Revenue Generators',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(142,124,195)'
+                    }
+                }
+                var trace3 = {
+                    type: 'bar',
+                    x: osmean,
+                    y: oskeys,
+                    xaxis: 'x3',
+                    yaxis: 'y3',
+                    name: 'Mean',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(0,254,0)'
+                    }
+                }
+                var layout = {
+                    grid: { rows: 1, columns: 3, pattern: 'independent' },
+                };
+
+                var data = [trace1, trace2, trace3];
+
+
+                Plotly.newPlot('os', data, layout);
+            }
+        });
+
+
+
+    })
+    $(document).ready(function () {
+        var dkeys = [];
+        var dcount = [];
+        var drevenue = [];
+        var dmean = [];
+        $.ajax({
+            dataType: "json",
+            url: "/Admin/DeviceOS",
+            //data: data,
+            success: function (data) {
+                console.log(Object.keys(data).length);
+                for (var i = 0; i < 5; i++) {
+                    dkeys[i] = Object.keys(data)[i]
+                    dcount[i] = data[Object.keys(data)[i]];
+                }
+                for (var i = 5; i < 10; i++) {
+
+
+                    drevenue[i - 5] = data[Object.keys(data)[i]];
+                }
+                for (var i = 10; i < 15; i++) {
+
+
+                    dmean[i - 10] = data[Object.keys(data)[i]];
+                }
+
+
+                var trace1 = {
+                    type: 'bar',
+                    x: dcount,
+                    y: dkeys,
+                    orientation: 'h',
+                    name: 'Counts',
+                    marker: {
+                        color: 'rgb(0,124,255)'
+                    }
+                }
+                var trace2 = {
+                    type: 'bar',
+                    x: drevenue,
+                    y: dkeys,
+                    xaxis: 'x2',
+                    yaxis: 'y2',
+                    name: 'Revenue Generators',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(142,124,195)'
+                    }
+                }
+                var trace3 = {
+                    type: 'bar',
+                    x: dmean,
+                    y: dkeys,
+                    xaxis: 'x3',
+                    yaxis: 'y3',
+                    name: 'Mean',
+                    orientation: 'h',
+                    marker: {
+                        color: 'rgb(0,254,0)'
+                    }
+                }
+                var layout = {
+                    grid: { rows: 1, columns: 3, pattern: 'independent' },
+                };
+
+                var data = [trace1, trace2, trace3];
+
+
+                Plotly.newPlot('category', data, layout);
+            }
+        });
+
+
+
+    })
+
+    //$(document).ready(function () {
+    //    var keys = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    //    var values = [];
+    //    $.ajax({
+    //        dataType: "json",
+    //        url: "/Admin/NonAud",
+    //        //data: data,
+    //        success: function (data) {
+    //            console.log(Object.keys(data).length);
+    //            for (var i = 0; i < Object.keys(data).length; i++) {
+    //                // keys[i - 1] = Object.keys(data)[i]
+    //                values[i] = data[Object.keys(data)[i]];
+    //            }
+    //            var trace1 = {
+    //                type: 'scatter',
+    //                x: keys,
+    //                y: values[0],
+    //                name: 'Reach',
+    //                orientation: 'h',
+    //                marker: {
+    //                    color: 'rgb(0,204,0)'
+    //                }
+    //            }
+    //            var trace2 = {
+    //                type: 'scatter',
+    //                x: keys,
+    //                y: values[1],
+    //                xaxis: 'x2',
+    //                yaxis: 'y2',
+    //                name: 'Engagements',
+    //                orientation: 'h',
+    //                marker: {
+    //                    color: 'rgb(55, 128, 191)'
+    //                }
+    //            }
+    //            var trace3 = {
+    //                type: 'scatter',
+    //                x: keys,
+    //                y: values[2],
+    //                name: 'Impressions',
+    //                orientation: 'h',
+    //                marker: {
+    //                    color: 'rgb(142,124,195)'
+    //                }
+    //            }
+
+
+    //            var data = [trace1, trace2, trace3];
+    //            var layout = {
+    //                grid: { rows: 1, columns: 2, pattern: 'independent' },
+    //            };
+
+
+    //            Plotly.newPlot('Reach', data, layout);
+    //        }
+    //    });
+
+
+
+    //})
+
+
+
+</script>
+
+
+
+
